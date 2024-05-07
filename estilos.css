@@ -48,6 +48,7 @@ input[type="checkbox"]:focus {
 
 .cor-botao {
   background-color: #B29463;
+  color: black;
 }
 
 .cor-botao:hover {
