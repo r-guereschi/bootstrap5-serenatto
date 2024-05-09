@@ -18,8 +18,9 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
 		/>
 		<link rel="stylesheet" href="./estilos.css" />
+		<script src="script.js" defer></script>
 	</head>
-	<body>
+	<body data-bs-theme="light">
 		<header>
 			<nav class="navbar-expand-xl navbar bg-body-tertiary fixed-top px-xl-5">
 				<div class="container-fluid">
@@ -60,7 +61,7 @@
 									<a class="nav-link" href="#">Sobre</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Contato</a>
+									<a class="nav-link" href="#contato">Contato</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">
@@ -69,9 +70,9 @@
 												class="form-check-input"
 												type="checkbox"
 												role="switch"
-												id="flexSwitchCheckDefault"
+												id="modo-noturno"
 											/>
-											<label class="form-check-label" for="flexSwitchCheckDefault"
+											<label class="form-check-label" for="modo-noturno"
 												>Modo Noturno</label
 											>
 										</div>
@@ -294,7 +295,77 @@
 			<section
 				class="banners banner-3 d-flex flex-column justify-content-center align-items-center text-center mt-5"
 			></section>
+
+			<section class="py-4 container">
+				<div class="row">
+					<div class="col-10 col-xl-8 mx-auto">
+						<div class="border border-2 rounded p-3">
+							<h3 class="fw-bold p-3">Entre em contato!</h3>
+							<form id="contato">
+								<div class="form-floating mb-3">
+									<input type="text" class="form-control" id="floatingNome" placeholder="Nome" />
+									<label for="floatingNome">Nome</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control"
+										id="floatingEmail"
+										placeholder="name@example.com"
+									/>
+									<label for="floatingEmail">Email</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="number"
+										class="form-control"
+										id="floatingTelefone"
+										placeholder="Telefone"
+									/>
+									<label for="floatingTelefone">Telefone</label>
+								</div>
+								<select class="form-select mb-3" aria-label="Default select example">
+									<option selected>Preferência de contato</option>
+									<option value="1">WhatsApp</option>
+									<option value="2">Ligação</option>
+									<option value="3">Email</option>
+								</select>
+								<label for="nivel-satisfacao" class="form-label container"
+									>Nível de satisfação:</label
+								>
+								<input type="range" class="form-range" id="nivel-satisfacao" />
+								<div class="form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="flexCheckDefault"
+									/>
+									<label class="form-check-label" for="flexCheckDefault">
+										Deseja receber novidades por email?
+									</label>
+								</div>
+								<button type="button" class="btn cor-botao w-100 fs-5 mt-3 p-3 fw-bold">
+									Enviar
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+
+		<footer class="text-center">
+			<div class="contatos fs-4 pt-3">
+				<a class="contatos-img" href="#"><i class="bi bi-whatsapp"></i></a>
+				<a class="mx-4 contatos-img" href="#"><i class="bi bi-instagram"></i></a>
+				<a class="contatos-img" href="#"><i class="bi bi-twitter"></i></a>
+			</div>
+			<p class="footer-text mt-5 pb-3 fw-bold">
+				2023 <i class="bi bi-c-circle"></i> Desenvolvido por Alura | Projeto fictício
+				sem fins comerciais.
+			</p>
+		</footer>
 
 		<!-- canvas 1 -->
 		<div
